@@ -4,7 +4,7 @@
 
 Have docker.
 
-# Run symfony
+# Run symfony manually
 
 
 Pull docker image
@@ -30,3 +30,7 @@ run the server
 
 
 
+
+# Use the docker image that we set up
+
+` docker-compose up
