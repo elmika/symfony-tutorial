@@ -1,2 +1,6 @@
+# Install dependencies
+composer install
+
 # Start the Symfony development server
-php -S 0.0.0.0:8000 -t public/
+symfony server:start --no-tls --port=8000 --allow-all-ip
+
