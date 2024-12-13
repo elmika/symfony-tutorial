@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} {{ parent() }} test page {% endblock %}
+
+{% block body %}
+
+<h1><strong>Starshop</strong>: Here we have our store</h1>
+
+<div>This is completely random: {{ random }} </div>
+
+<div>
+    {% if random > 5 %}
+        {# comment #}
+        Not bad.
+    {% endif %}
+</div>
+
+<div>
+    <h2> Other stuff</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <td>{{ stuff.name|upper|lower|title }}</td>
+        </tr>
+        <tr>
+            <th>Quantity</th>
+            <td>{{ stuff.quantity * 3 }}</td>
+        </tr>
+        <tr>
+            <th>Other</th>
+            <td>{{ stuff.other }}</td>
+        </tr>
+    </table>
+</div>
+{% endblock %}
