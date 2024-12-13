@@ -34,3 +34,8 @@ run the server
 # Use the docker image that we set up
 
 ` docker-compose up
+
+
+# Access our webpages
+
+` http://localhost:8000
