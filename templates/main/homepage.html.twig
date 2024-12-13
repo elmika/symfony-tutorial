@@ -6,14 +6,16 @@
 
 <h1><strong>Starshop</strong>: Here we have our store</h1>
 
-<div>This is completely random: {{ random }} </div>
+<div>This is completely random: {{ ships | length * 7 }} </div>
 
 <div>
-    {% if random > 5 %}
+    {% if ships | length * 7 > 5 %}
         {# comment #}
         Not bad.
     {% endif %}
 </div>
+
+    {% set stuff = random(ships) %}
 
 <div>
     <h2> Other stuff</h2>
@@ -23,12 +25,16 @@
             <td>{{ stuff.name|upper|lower|title }}</td>
         </tr>
         <tr>
-            <th>Quantity</th>
-            <td>{{ stuff.quantity * 3 }}</td>
+            <th>Class</th>
+            <td>{{ stuff.class }}</td>
         </tr>
         <tr>
-            <th>Other</th>
-            <td>{{ stuff.other }}</td>
+            <th>Captain</th>
+            <td>{{ stuff.captain }}</td>
+        </tr>
+        <tr>
+            <th>Status</th>
+            <td>{{ stuff.status }}</td>
         </tr>
     </table>
 </div>
