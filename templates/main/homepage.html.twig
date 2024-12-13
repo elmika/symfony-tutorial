@@ -22,7 +22,11 @@
     <table>
         <tr>
             <th>Name</th>
-            <td>{{ stuff.name|upper|lower|title }}</td>
+            <td>
+                <a href="{{ path('app_starship_show', { id: stuff.id }) }}">
+                    {{ stuff.name|title }}
+                </a>
+            </td>
         </tr>
         <tr>
             <th>Class</th>

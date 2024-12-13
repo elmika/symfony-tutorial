@@ -5,7 +5,7 @@ namespace App\Model;
 class Starship
 {
     public function __construct(
-        private string $id,
+        private int $id,
         private string $name,
         private string $class,
         private string $captain,
@@ -14,7 +14,7 @@ class Starship
 
     }
 
-    public function getId(): string
+    public function getId(): int
     {
         return $this->id;
     }
