@@ -39,3 +39,7 @@ run the server
 # Access our webpages
 
 ` http://localhost:8000
+
+# Access the container with a command line
+
+` docker exec -it mediala_inside bash
